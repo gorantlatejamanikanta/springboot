@@ -16,7 +16,7 @@ public class UserController {
     UserServiceImpl userService;
 
     @GetMapping("/user-by-id/{user_id}")
-    public Optional<User> findByUserName(@PathVariable("user_id")   Integer user_id) throws Exception {
+    public Optional<User> findByUserName(@PathVariable("user_id") Integer user_id) throws Exception {
         return userService.findByUserName(user_id);
     }
 
